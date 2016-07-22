@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 50px auto 0;
+    width: 400px;
+}
+#audioplayer {
+    height: 100px;
+    position: relative;
+    width: 326px;
+    background-color: #333333;
+    border-radius: 5px;
+}
+.song, .artist {
+    font-family: Verdana;
+    left: 20px;
+    position: absolute;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.song {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    top: 23px;
+}
+.artist {
+    color: #eeeeee;
+    font-size: 12px;
+    top: 40px;
+}
+.controls {
+    cursor: pointer;
+    height: 23px;
+    left: 167px;
+    position: absolute;
+    top: 20px;
+    width: 138px;
+}
+.controls .play, .controls .stop, .controls .prev, .controls .next {
+    float: left;
+    height: 100%;
+    width: 32%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.controls .play {
+    background-image: url("../images/play.png");
+}
+.controls .stop {
+    background-image: url("../images/stop.png");
+    display: none;
+}
+.controls .prev {
+    background-image: url("../images/prev.png");
+}
+.controls .next {
+    background-image: url("../images/next.png");
+}
+.controls .play:hover {
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+}
+.controls .stop:hover {
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+}
+.controls .prev:hover {
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+}
+.controls .next:hover {
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+}
+.hidden {
+    display: none;
+}
+.controls .visible {
+    display: block;
+}
+.volume {
+    height: 11px;
+    left: 180px;
+    position: absolute;
+    top: 50px;
+    width: 112px;
+    background-color: black;
+    border-radius: 5px;
+}
+.time {
+    height: 15px;
+    left: 20px;
+    position: absolute;
+    top: 75px;
+    width: 285px;
+    background-color: black;
+    border-radius: 10px;
+}
+.ui-slider-range {
+    height: calc(100% - 4px);
+    position: absolute;
+    top: 2px;
+    background-color: red;
+    border-radius: 20px;
+    margin-left: 2px;
+}
+.ui-slider-handle {
+    cursor: pointer;
+    margin-left: -5px;
+    position: absolute;
+}
+
+.volume .ui-slider-handle {
+    height: 11px;
+    width: 11px;
+    background-color: whitesmoke;
+    border-radius: 9px;
+    border: 1px solid black;
+    top: -2px;
+}
+
+.time .ui-slider-handle {
+    height: 11px;
+    width: 11px;
+    border-radius: 9px;
+    top: 2px;
+}
+.playlist {
+    background-color: #333333;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 1px 0 0 0px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    position: relative;
+    width: 326px;
+}
+.playlist li {
+    color: #EEEEEE;
+    cursor: pointer;
+    margin: 0 0 5px 15px;
+}
+.playlist li.active {
+    font-weight: bold;
+}
